@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="hero">
+        <div class="container">
+            <nav>
+                <a href="" style="font-size: 1.8rem; text-decoration: none ;color:var(--a-color);"><strong>Kashish</strong></a>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox" style="justify-content: space-around;">
+                        <input type="checkbox" id ="checkbox">
+                        <div class="slider round" style="color: #ffaa00;">&nbsp<i class="fa-solid fa-moon" style="color: #ffaa00;"></i>&nbsp&nbsp&nbsp<i class="fa-solid fa-sun"></i></div>
+                    </label>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Interested">Interested</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact" >Contact</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()" ></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()" ></i>
+            </nav>
+            <div class="info">
+                <img src="img.jpg" alt="">
+                <h1 >Heyy! This is</h1>
+                <h1 style="color: lightcoral;">Kashish <br> Varshney</h1>
+                <p> Frontend Developer with high level of experience in web designing and development,<br>producing the Quality work</p>
+                <a href="#" class="btn btn2">Hire me</a>
+                
+            </div>
+        </div>
+       
+
+    
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+           
+            <div class="about-col-2">
+                <h2 class="sub-title">Know <span style="color: #ffaa00;">Me</span> <i class="fa-solid fa-heart" style="color: red;"></i></h2>
+                <p>Frontend Developer with high level of experience in web designing and development,
+                    producing the Quality work</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                    <p class="tab-links" onclick="opentab('edu')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Full-Stack Developer</span><br> Web/App development</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="exp">
+                    <ul>
+                        <li><span>2021-2025</span><br> Student </li>
+                        <li><span>1 month</span><br>Internship at BharatIntern</li>
+                        <li><span>1 month</span><br>Internship at Dabotics India Private Limited</li>
+                        <li><span>1 month</span><br>Internship at CodSoft</li>
+                        <li><span>1 month</span><br>Internship at Lets Grow More</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="edu">
+                    <ul>
+                        <li><span>2021-2025</span><br>Btech CSE from GLA University</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-col-1">
+                <img src="istockphoto-1359164204-1024x1024.jpg" alt="" >
+            </div>
+            <a href="images/Resume_31_01_2023_11_03_54_pm.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+</div>
+
+
+<div id="services">
+    <div class="container">
+        <h2 class="sub-title">My <span style="color: #ffaa00;">Awesome </span><br> Services</h2>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, molestiae earum quis minima sapiente aspernatur.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-gamepad"></i>
+                <h2>Game Development</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, molestiae earum quis minima sapiente aspernatur.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-user-secret"></i>
+                <h2>Entrepreneurship</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, molestiae earum quis minima sapiente aspernatur.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+<!---------interested----------------->
+<div id="Interested">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-2">
+                <h2 class="sub-title">MY <span style="color: #ffaa00;">Dream </span>Companies
+                </h2>
+                <p>I want to work for these companies as they are my dream company as they inspire me alot</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, quibusdam. Modi expedita, <br>  quas consequuntur error dolores .</p>
+                <a href=""  class="btn btn2">Hire me</a>
+            </div>
+            <div class="about-col-1">
+                <div><img src="icons8-google-96.png" alt=""></div>
+                <div><img src="icons8-meta-96.png" alt=""></div>
+                <div><img src="icons8-upwork-a-global-freelancing-platform-where-professionals-connect-and-collaborate-remotely-96.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ---------------------portfolio---------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">My <span style="color: #ffaa00;">Recent</span> Projects</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="port.avif" alt="" >
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>
+                        The App connects you to the talented person around the world.Download it from play store.
+
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="port2.avif" alt=""  height=380>
+                <div class="layer">
+                    <h3>Quicko : E-commerce App </h3>
+                    <p>
+                        The App helps you to buy anything around the world.Download it from play store.
+
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="port1.avif" alt="" height=380>
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>
+                        The App have many different songs having diffrent languages around the world.Download it from play store.
+
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- --------------contact--------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">Contact Me</h2>
+                <p><i class="fa-sharp fa-solid fa-paper-plane" style="color: #ffaa00;"></i> kashishvarshney838@gmail.com</p>
+                <p><i class="fa-solid fa-phone" style="color: #ffaa00;"></i> +91 8445111838 </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-github" style="color:#ffaa00 ;"></i></a>
+       <a href="#"><i class="fa-brands fa-linkedin" style="color:#ffaa00 ;"></i></a>
+       <a href="#"><i class="fa-brands fa-instagram" style="color:#ffaa00 ;"></i></a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Mail-ID" required>
+                    <textarea name="Message"  rows="6" placeholder="Enter Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+
+                </form>
+            </div>
+        </div>
+    </div>
+   
+</div>
+<div class="copyright">
+        
+    <p><i class="fa-sharp fa-solid fa-copyright"></i> Copyright Made by Kashish Varshney <i class="fa-solid fa-heart" style="color: red;"></i></p>
+
+</div>
+
+
+<script src="script.js">
+ 
+</script>
+</body>
+</html>
